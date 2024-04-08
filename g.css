@@ -1,0 +1,239 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    padding: 4px 24px 4px 2px;
+}
+
+.logo{
+
+    height: 80px;
+    width: 80px;
+    
+}
+
+.logo img{
+
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+
+    flex-grow: 2;
+
+}
+
+.nav-links ul{
+
+    display: flex;
+    column-gap: 4%;
+    list-style-type: none;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+    
+}
+
+.nav-links a{
+
+    color: black;
+    text-decoration: none;
+}
+
+.social-media{
+
+    display: flex;
+    column-gap: 20px;
+    
+}
+
+.social-media img{
+
+    height: 40px;
+    color: black;
+}
+
+
+
+.content{
+    height: 920px;
+    width: 100%;
+    background-color: blue;
+    background-image: url('images/heroimg.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+.balancer{
+    
+    
+    width: 250px;
+    position:relative;
+    top: 830px;
+    left: 10px;
+
+    background-image:linear-gradient(to right,black,grey);
+    color:rgb(235, 241, 246);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.explain{
+    
+    width: 100%;
+    padding: 2%,3%;
+    background-color:grey;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 18%;
+    
+}
+.explainone{
+    
+    width: 100%;
+    text-overflow: clip;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+.explaintwo{
+    
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+.explainthree{
+    
+    width: 100%;
+    text-overflow: clip;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+.section-2
+{
+    background-color: rgb(210, 219, 219);
+    padding: 3% 4% 0% 4%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+.service{
+
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(210, 219, 219);
+
+}
+
+.serve
+{
+    width: 28%;
+    height: 100%;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.serve h4{
+
+    padding: 20px 0px 12px 0px;
+
+}
+
+.serve img{
+
+    height: 100%;
+    width: 100%;
+}
+
+.btn{
+
+    background-color: black;
+    padding: 8px 30px;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+@media(max-width:768px){
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+        overflow: hidden;
+        position: static;
+    }
+    .nav-links ul{
+
+        align-items: flex-start ;
+        padding-left: 10px;
+        row-gap: 20px;
+        flex-direction: column;
+    }
+    .content{
+        overflow: hidden;
+        background-size: cover;
+    }
+
+    .social-media{
+
+        padding-left: 10px;
+    }
+
+
+
+
+    @media(max-width : 576px)
+{
+
+    .explain{
+        flex-direction: column;
+        row-gap: 30px;
+        overflow: hidden;
+    }
+
+    .service{
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .serve{
+        width: auto;
+    }
+}
+}
+
+
+
+
+
+
+
+
